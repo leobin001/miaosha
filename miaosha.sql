@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : apache本地
-Source Server Version : 50547
+Source Server         : 本地
+Source Server Version : 50714
 Source Host           : localhost:3306
 Source Database       : miaosha
 
 Target Server Type    : MYSQL
-Target Server Version : 50547
+Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2019-08-23 23:06:18
+Date: 2019-08-24 15:08:59
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -53,8 +53,8 @@ CREATE TABLE `miaosha_goods` (
 -- ----------------------------
 -- Records of miaosha_goods
 -- ----------------------------
-INSERT INTO `miaosha_goods` VALUES ('1', '1', '0.01', '4', '2017-11-05 15:18:00', '2017-11-13 14:18:00');
-INSERT INTO `miaosha_goods` VALUES ('2', '2', '0.01', '9', '2017-11-12 14:00:10', '2017-11-13 14:00:00');
+INSERT INTO `miaosha_goods` VALUES ('1', '1', '0.01', '9', '2019-08-24 09:56:00', '2019-08-26 09:57:00');
+INSERT INTO `miaosha_goods` VALUES ('2', '2', '0.01', '9', '2019-08-24 08:18:00', '2019-09-26 15:18:00');
 
 -- ----------------------------
 -- Table structure for miaosha_order
@@ -66,11 +66,13 @@ CREATE TABLE `miaosha_order` (
   `order_id` bigint(20) DEFAULT NULL COMMENT '订单ID',
   `goods_id` bigint(20) DEFAULT NULL COMMENT '商品ID',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of miaosha_order
 -- ----------------------------
+INSERT INTO `miaosha_order` VALUES ('1', '18912341234', '1', '1');
+INSERT INTO `miaosha_order` VALUES ('2', '18912341234', '1', '2');
 
 -- ----------------------------
 -- Table structure for miaosha_user
@@ -110,11 +112,13 @@ CREATE TABLE `order_info` (
   `create_date` datetime DEFAULT NULL COMMENT '订单创建时间',
   `pay_date` datetime DEFAULT NULL COMMENT '支付时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of order_info
 -- ----------------------------
+INSERT INTO `order_info` VALUES ('1', '18912341234', '1', null, 'iphoneX', '1', '0.01', '1', '0', '2019-08-24 14:47:41', null);
+INSERT INTO `order_info` VALUES ('2', '18912341234', '2', null, '华为Meta9', '1', '0.01', '1', '0', '2019-08-24 15:07:27', null);
 
 -- ----------------------------
 -- Table structure for user
