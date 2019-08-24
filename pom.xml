@@ -7,6 +7,7 @@
   <groupId>com.imooc</groupId>
   <artifactId>miaosha</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging><!--打包用war-->
 
   <name>miaosha</name>
   <!-- FIXME change it to the project's website -->
@@ -25,6 +26,14 @@
   </properties>
 
   <dependencies>
+
+    <!--打包用-->
+    <!--<dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-tomcat</artifactId>
+      <scope>provided</scope>
+    </dependency>-->
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
@@ -89,8 +98,22 @@
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+
+    <!--打包用-->
+    <!--<finalName>${project.artifactId}</finalName>-->
+
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (ma y be moved to parent pom) -->
       <plugins>
+
+        <!--打包用-->
+        <!--<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>
+        </plugin>-->
+
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
