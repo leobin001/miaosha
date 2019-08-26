@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2019-08-24 17:56:31
+Date: 2019-08-26 14:14:25
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -53,7 +53,7 @@ CREATE TABLE `miaosha_goods` (
 -- ----------------------------
 -- Records of miaosha_goods
 -- ----------------------------
-INSERT INTO `miaosha_goods` VALUES ('1', '1', '0.01', '9', '2019-08-24 09:56:00', '2019-08-26 09:57:00');
+INSERT INTO `miaosha_goods` VALUES ('1', '1', '0.01', '9', '2019-08-26 14:13:00', '2019-08-30 09:57:00');
 INSERT INTO `miaosha_goods` VALUES ('2', '2', '0.01', '9', '2019-08-24 08:18:00', '2019-09-26 15:18:00');
 
 -- ----------------------------
