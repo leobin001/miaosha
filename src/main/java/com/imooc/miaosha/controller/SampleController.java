@@ -25,33 +25,33 @@ public class SampleController {
     @Autowired
     MQSender sender;
 
-    @RequestMapping("/mq/header")
-    @ResponseBody
-    public Result<String> header() {
-        sender.sendHeader("hello, imooc");
-        return Result.success("hello world");
-    }
-
-    @RequestMapping("/mq/fanout")
-    @ResponseBody
-    public Result<String> fanout() {
-        sender.sendFanout("hello, imooc");
-        return Result.success("hello world");
-    }
-
-    @RequestMapping("/mq/topic")
-    @ResponseBody
-    public Result<String> topic() {
-        sender.sendTopic("hello, imooc");
-        return Result.success("hello world");
-    }
-
-    @RequestMapping("/mq")
-    @ResponseBody
-    public Result<String> mq() {
-        sender.send("hello, imooc");
-        return Result.success("hello world");
-    }
+//    @RequestMapping("/mq/header")
+//    @ResponseBody
+//    public Result<String> header() {
+//        sender.sendHeader("hello, imooc");
+//        return Result.success("hello world");
+//    }
+//
+//    @RequestMapping("/mq/fanout")
+//    @ResponseBody
+//    public Result<String> fanout() {
+//        sender.sendFanout("hello, imooc");
+//        return Result.success("hello world");
+//    }
+//
+//    @RequestMapping("/mq/topic")
+//    @ResponseBody
+//    public Result<String> topic() {
+//        sender.sendTopic("hello, imooc");
+//        return Result.success("hello world");
+//    }
+//
+//    @RequestMapping("/mq")
+//    @ResponseBody
+//    public Result<String> mq() {
+//        sender.send("hello, imooc");
+//        return Result.success("hello world");
+//    }
 
     @RequestMapping("/thymeleaf")
     public String thymeleaf(Model model) {

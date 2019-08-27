@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 本地
-Source Server Version : 50714
+Source Server         : apache本地
+Source Server Version : 50547
 Source Host           : localhost:3306
 Source Database       : miaosha
 
 Target Server Type    : MYSQL
-Target Server Version : 50714
+Target Server Version : 50547
 File Encoding         : 65001
 
-Date: 2019-08-26 14:14:25
+Date: 2019-08-27 22:07:14
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -53,7 +53,7 @@ CREATE TABLE `miaosha_goods` (
 -- ----------------------------
 -- Records of miaosha_goods
 -- ----------------------------
-INSERT INTO `miaosha_goods` VALUES ('1', '1', '0.01', '9', '2019-08-26 14:13:00', '2019-08-30 09:57:00');
+INSERT INTO `miaosha_goods` VALUES ('1', '1', '0.01', '9', '2019-08-24 09:56:00', '2019-09-28 09:57:00');
 INSERT INTO `miaosha_goods` VALUES ('2', '2', '0.01', '9', '2019-08-24 08:18:00', '2019-09-26 15:18:00');
 
 -- ----------------------------
@@ -68,11 +68,7 @@ CREATE TABLE `miaosha_order` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
--- ----------------------------
--- Records of miaosha_order
--- ----------------------------
-INSERT INTO `miaosha_order` VALUES ('1', '18912341234', '1', '1');
-INSERT INTO `miaosha_order` VALUES ('2', '18912341234', '1', '2');
+
 
 -- ----------------------------
 -- Table structure for miaosha_user
@@ -114,11 +110,7 @@ CREATE TABLE `order_info` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
--- ----------------------------
--- Records of order_info
--- ----------------------------
-INSERT INTO `order_info` VALUES ('1', '18912341234', '1', null, 'iphoneX', '1', '0.01', '1', '0', '2019-08-24 14:47:41', null);
-INSERT INTO `order_info` VALUES ('2', '18912341234', '2', null, '华为Meta9', '1', '0.01', '1', '0', '2019-08-24 15:07:27', null);
+
 
 -- ----------------------------
 -- Table structure for user
@@ -128,7 +120,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of user
